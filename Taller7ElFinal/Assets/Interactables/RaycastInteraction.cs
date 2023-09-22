@@ -4,44 +4,44 @@ using UnityEngine;
 
 public class RaycastInteraction : MonoBehaviour
 {
-    public string targetTag = "MyTag"; // Tag of the GameObject you want to enable/disable
-    public float interactionRange = 3f; // Range within which the player can interact
-    private GameObject targetObject;
+    // Define a reference to the GameObject or component you want to toggle.
+    public GameObject interactableObject;
+
+    // Define the maximum interaction distance.
+    public float interactionRange = 2.0f;
 
     private void Update()
     {
-        // Find the target GameObject with the specified tag (move this to Start if it's not changing during gameplay)
-        targetObject = GameObject.FindGameObjectWithTag(targetTag);
-
-        // Check if the player presses the "F" key
+        // Check for the "F" key press.
         if (Input.GetKeyDown(KeyCode.F))
         {
-            // Check if the target GameObject is in range
-            if (IsPlayerInRange(targetObject))
-            {
-                // Toggle the target GameObject's active state if it's not null
-                if (targetObject != null)
-                {
-                    targetObject.SetActive(!targetObject.activeSelf);
+            // Calculate the distance between the player and the interactable object.
+            float distance = Vector3.Distance(transform.position, interactableObject.transform.position);
 
-                    // Log a message indicating successful interaction
-                    Debug.Log("Player interacted with the object.");
-                }
+            // Check if the player is within the interaction range.
+            if (distance <= interactionRange)
+            {
+                // Toggle the interactable state.
+                ToggleInteractableObject();
             }
         }
     }
 
-    private bool IsPlayerInRange(GameObject target)
+    // Function to toggle the interactable object on or off.
+    private void ToggleInteractableObject()
     {
-        if (target == null)
+        if (interactableObject != null)
         {
-            return false;
+            // Toggle the GameObject or component's active state.
+            interactableObject.SetActive(!interactableObject.activeSelf);
         }
-
-        // Calculate the distance between the player and the target object
-        float distance = Vector3.Distance(transform.position, target.transform.position);
-
-        // Check if the player is within the interaction range
-        return distance <= interactionRange;
     }
 }
+
+
+
+
+
+
+
+
