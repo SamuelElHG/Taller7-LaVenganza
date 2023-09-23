@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
+
+    public Volume crazyState;
 
     //Patrol
     public Vector3 walkPoint;
@@ -71,6 +74,7 @@ public class EnemyAI : MonoBehaviour
     void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        crazyState.weight = 0f;
     }
     void AttackPlayer()
     {
@@ -82,6 +86,7 @@ public class EnemyAI : MonoBehaviour
         if(!alreadyAttacked)
         {
             //Whatever attack
+            crazyState.weight = 1f;
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
