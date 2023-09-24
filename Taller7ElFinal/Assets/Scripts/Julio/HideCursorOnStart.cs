@@ -9,5 +9,7 @@ public class HideCursor : MonoBehaviour
     {
         if (hideCursor)
             Cursor.visible = false;
+        else if (hideCursor == false)
+            Cursor.visible = true;
     }
 }
