@@ -3,7 +3,47 @@ guid: d3a8783cff494824d83e0c874a1915e2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plank4_woodPlankMat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank1Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank2Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank3Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank5Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank6Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank7Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodPlank_Plank8Mat
+    second: {fileID: 2100000, guid: c7dab3ce8fac6bf4ead28c71b676067c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
