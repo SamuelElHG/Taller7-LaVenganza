@@ -1,10 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractablePlank : MonoBehaviour
 {
+    public ChangeTextPlank changeTextPlank;
+
     public float interactionRange;
     public GameObject interactable0;
     public GameObject destroyableObs0;
@@ -18,7 +22,12 @@ public class InteractablePlank : MonoBehaviour
     public GameObject interactable3;
     public GameObject destroyableObs3;
     public GameObject Plank3;
-    private int plankCount = 0;
+    public int plankCount = 0;
+
+    internal float GetValue()
+    {
+        return plankCount;
+    }
 
     void Update()
     {
@@ -37,21 +46,25 @@ public class InteractablePlank : MonoBehaviour
                     {
                         Destroy(interactable0);
                         plankCount++;
+                        changeTextPlank.UpdateText(plankCount.ToString());
                     }
                     else if (plankCount == 1)
                     {
                         Destroy(interactable1);
                         plankCount++;
+                        changeTextPlank.UpdateText(plankCount.ToString());
                     }
                     else if (plankCount == 2)
                     {
                         Destroy(interactable2);
                         plankCount++;
+                        changeTextPlank.UpdateText(plankCount.ToString());
                     }
                     else if (plankCount == 3)
                     {
                         Destroy(interactable3);
                         plankCount++;
+                        changeTextPlank.UpdateText(plankCount.ToString());
                     }
                 }
                 if(hit.collider.CompareTag("DestroyableObs"))

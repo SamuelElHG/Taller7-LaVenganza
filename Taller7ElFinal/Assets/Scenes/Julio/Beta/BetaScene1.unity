@@ -521,6 +521,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e4d06ef8643d5644903e82910502e99, type: 3}
+--- !u!1 &55042960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55042961}
+  - component: {fileID: 55042962}
+  m_Layer: 0
+  m_Name: UIPlankUpdater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &55042961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55042960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55042962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55042960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff99b0638a51f44db0631643a8d3445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 1225889426}
+  otherScript: {fileID: 1021047118}
 --- !u!4 &73355112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4181677736290546478, guid: 9e4d06ef8643d5644903e82910502e99,
@@ -2255,7 +2301,7 @@ GameObject:
   - component: {fileID: 461793205}
   - component: {fileID: 461793204}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5037,6 +5083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6455af05271824479d18cb022c609fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeTextPlank: {fileID: 55042962}
   interactionRange: 3
   interactable0: {fileID: 229850397}
   destroyableObs0: {fileID: 752920596}
@@ -5050,6 +5097,7 @@ MonoBehaviour:
   interactable3: {fileID: 576213339}
   destroyableObs3: {fileID: 446857881}
   Plank3: {fileID: 1029815364}
+  plankCount: 0
 --- !u!114 &1021047119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10698,3 +10746,4 @@ SceneRoots:
   - {fileID: 1776007941}
   - {fileID: 1631548708}
   - {fileID: 1525031586}
+  - {fileID: 55042961}
