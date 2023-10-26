@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region otrascosas
     public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
     public float jumpPower = 7f;
     public float gravity = 10f;
+    #endregion
+
+    [SerializeField] AudioClip m_Clip;
+    [SerializeField] float AudioVolume;
 
 
     public float lookSpeed = 2f;
@@ -43,7 +48,10 @@ public class PlayerMovement : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-
+        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+        {
+            PlayAudio.instance.playSound(m_Clip, AudioVolume);
+        }
         #endregion
 
         #region Handles Jumping
