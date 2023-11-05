@@ -48,10 +48,10 @@ public class PlayerMovement : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+       /* if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
         {
             PlayAudio.instance.playSound(m_Clip, AudioVolume);
-        }
+        }*/
         #endregion
 
         #region Handles Jumping
