@@ -293,6 +293,8 @@ MonoBehaviour:
   runSpeed: 12
   jumpPower: 7
   gravity: 10
+  m_Clip: {fileID: 8300000, guid: efdfef1d077f4634192332376e405516, type: 3}
+  AudioVolume: 15
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
@@ -356,7 +358,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8508401054813255692}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: efdfef1d077f4634192332376e405516, type: 3}
