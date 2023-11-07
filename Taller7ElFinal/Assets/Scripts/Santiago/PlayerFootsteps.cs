@@ -10,23 +10,22 @@ public class PlayerFootsteps : MonoBehaviour
     public AudioClip runSound;
     private bool isRunning = false;
 
-    private CharacterController characterController; // Agregar referencia al CharacterController
+    private CharacterController characterController;
 
     private void Start()
     {
-        characterController = GetComponent<CharacterController>(); // Obtener referencia al CharacterController
+        characterController = GetComponent<CharacterController>();
     }
 
     private void Update()
     {
-        bool walking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
-
         // Calcular la velocidad actual del personaje
         float playerSpeed = characterController.velocity.magnitude;
 
-        if (walking)
-        {
-            if (isRunning)
+         if (0 < playerSpeed && playerSpeed < 10)
+
+            {
+                if (isRunning)
             {
                 runAudioSource.Stop();
                 isRunning = false;
@@ -40,11 +39,11 @@ public class PlayerFootsteps : MonoBehaviour
                 walkAudioSource.Play();
             }
         }
-        else if (playerSpeed > 0 && Input.GetKey(KeyCode.LeftShift))
+        else if (playerSpeed >= 10)
         {
             if (!isRunning || !runAudioSource.isPlaying)
             {
-                walkAudioSource.Stop(); // Detener el sonido de caminar
+                walkAudioSource.Stop();
                 runAudioSource.clip = runSound;
                 runAudioSource.pitch = 1.5f; // Ajusta la velocidad al correr
                 runAudioSource.Play();
