@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 89494831}
-  scene: BetaScene1
+  scene: BetaGameplay
 --- !u!1 &92142386
 GameObject:
   m_ObjectHideFlags: 0

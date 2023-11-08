@@ -18876,7 +18876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54f1c6af34c6724e87f778d98e0f3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: PosLevel1
+  sceneToLoad: Creditos
 --- !u!4 &1648015571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7410859792586871937, guid: 1a2c2548f5f49194e8873a56881b5a3c,
