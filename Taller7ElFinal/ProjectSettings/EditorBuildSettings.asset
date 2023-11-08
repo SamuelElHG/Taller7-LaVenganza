@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Julio/MainMenu.unity
-    guid: 7ab0d403a0c2bc348bfe8242a684dcc5
+    path: Assets/Scenes/Julio/Beta/CinematicaInicial.unity
+    guid: 0ca15edb17fd7f54eacfe19f65af4eae
   - enabled: 1
-    path: Assets/Scenes/Sam/MeterAssets.unity
-    guid: 089aa47ce1ac8fd4583536dd00934b3f
-  - enabled: 1
-    path: Assets/Scenes/Julio/PosLevel1.unity
-    guid: 330abc07a9bf1a946bff1a7f60c4c61c
+    path: Assets/Scenes/Julio/Beta/BetaScene1.unity
+    guid: f48596666d1872840b1cf35d159d5359
   m_configObjects: {}

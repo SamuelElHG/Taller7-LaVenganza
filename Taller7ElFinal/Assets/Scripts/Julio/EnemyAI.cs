@@ -7,6 +7,8 @@ using UnityEngine.Rendering;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField]HealthController healthController;
+
     public NavMeshAgent agent;
 
     public Transform player;
@@ -90,6 +92,7 @@ public class EnemyAI : MonoBehaviour
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            healthController.GetHit();
         }
     }
 
