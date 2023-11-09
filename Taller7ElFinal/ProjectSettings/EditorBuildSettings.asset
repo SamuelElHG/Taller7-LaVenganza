@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Julio/Beta/Creditos.unity
     guid: 697cef4c24994c74f80dd476dece8fcc
+  - enabled: 1
+    path: Assets/Scenes/Sam/BetaWorkinf/BetaSam.unity
+    guid: d54476dc057c4934d98ae2e36e78e439
   m_configObjects: {}

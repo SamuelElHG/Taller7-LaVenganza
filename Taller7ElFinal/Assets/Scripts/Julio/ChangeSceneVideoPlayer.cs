@@ -16,6 +16,13 @@ public class ChangeSceneVideoPlayer : MonoBehaviour
         player.loopPointReached += OnVideoFinished;
     }
 
+    private void Update()
+    {
+        if (Input.anyKey){
+            SceneManager.LoadScene(scene);
+
+        }
+    }
     private void OnVideoFinished(VideoPlayer vp)
     {
         SceneManager.LoadScene(scene);
