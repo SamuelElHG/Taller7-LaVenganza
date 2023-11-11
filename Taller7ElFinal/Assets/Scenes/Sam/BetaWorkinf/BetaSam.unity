@@ -41071,6 +41071,46 @@ PrefabInstance:
       propertyPath: destroyableObs3
       value: 
       objectReference: {fileID: 446857881}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundDestroyable0
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundDestroyable1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundDestroyable2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundDestroyable3
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundInteractable0
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundInteractable1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundInteractable2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965666122396935511, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
+        type: 3}
+      propertyPath: soundInteractable3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8426834585638158896, guid: 1e3faddd0904af245847c0ff41713393,
         type: 3}
       propertyPath: popUp
