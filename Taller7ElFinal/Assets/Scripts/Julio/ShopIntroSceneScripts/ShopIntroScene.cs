@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ShopIntroScene : MonoBehaviour
 {
+    [SerializeField] AudioSource flashingAudio;
+    bool soundHasNotPlayed = true;
+
     [SerializeField] Light directionalLight;
     [SerializeField] GameObject Frame1;
     [SerializeField] GameObject Frame2;
@@ -28,7 +31,7 @@ public class ShopIntroScene : MonoBehaviour
     {
         Frame1.SetActive(false);
         Frame2.SetActive(true);
-        Frame3.SetActive(true);
+        Frame3.SetActive(false);
     }
     public void Trigger3()
     {
@@ -62,6 +65,11 @@ public class ShopIntroScene : MonoBehaviour
             { 
                 timeLeft1 -= Time.deltaTime;
                 directionalLight.intensity++;
+                if(soundHasNotPlayed)
+                {
+                    flashingAudio.Play();
+                    soundHasNotPlayed = false;
+                }
             }
             else
             {
