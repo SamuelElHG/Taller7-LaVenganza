@@ -3,7 +3,9 @@ using UnityEngine;
 public class RaycastController : MonoBehaviour
 {
     public float interactionRange;
-    public GameObject popUp; // The object you want to display when the ray hits something
+    public GameObject popUp; // Press F popUp
+    public GameObject cursorColorChange;
+    public GameObject arrowpopUp;
     public Camera mainCamera;
 
     private void Start()
@@ -23,15 +25,21 @@ public class RaycastController : MonoBehaviour
             if (hit.collider.CompareTag("Interactable") || hit.collider.CompareTag("DestroyableObs"))
             {
                 popUp.SetActive(true);
+                cursorColorChange.SetActive(true);
+                arrowpopUp.SetActive(true);
             }
             else
             {
                 popUp.SetActive(false);
+                cursorColorChange.SetActive(false);
+                arrowpopUp.SetActive(false);
             }
         }
         else
         {
             popUp.SetActive(false); // No hit detected, hide the popUp.
+            cursorColorChange.SetActive(false);
+            arrowpopUp.SetActive(false);
         }
     }
 }
