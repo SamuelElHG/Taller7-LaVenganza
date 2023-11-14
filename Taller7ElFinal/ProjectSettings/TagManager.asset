@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - DestroyableObs
+  - Lata
+  - Obstacle
   layers:
   - Default
   - TransparentFX
