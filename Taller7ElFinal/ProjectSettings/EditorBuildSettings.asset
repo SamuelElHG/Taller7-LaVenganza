@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Julio/Beta/Creditos.unity
     guid: 697cef4c24994c74f80dd476dece8fcc
+  - enabled: 1
+    path: "Assets/Scenes/NuevaVersi\xF3n/Juegobonito.unity"
+    guid: 5e3d71d43d8420943945f67375b6c81a
+  - enabled: 1
+    path: "Assets/Scenes/NuevaVersi\xF3n/PrimeraEscena.unity"
+    guid: 2d3ee8eab5e1d1b4db8b6f1994006fbf
+  - enabled: 1
+    path: "Assets/Scenes/NuevaVersi\xF3n/\xDAitimaEscena.unity"
+    guid: 718e5d8eaf6eb8645a88cd46e5e14f22
   m_configObjects: {}
