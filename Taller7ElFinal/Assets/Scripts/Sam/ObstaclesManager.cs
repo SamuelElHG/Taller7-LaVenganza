@@ -5,10 +5,13 @@ using UnityEngine;
 public class ObstaclesManager : MonoBehaviour
 {
     private int CanCount = 0;
+    public AudioClip lataSound;
+    public AudioClip obstacleSound;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,7 +27,10 @@ public class ObstaclesManager : MonoBehaviour
             CanCount++;
             Destroy(collision.gameObject);
             Debug.Log(CanCount);
-
+            if (lataSound != null)
+            {
+                audioSource.PlayOneShot(lataSound);
+            }
         }
 
         if (collision.gameObject.CompareTag("Obstacle"))
@@ -34,7 +40,10 @@ public class ObstaclesManager : MonoBehaviour
                 Destroy(collision.gameObject);
                 CanCount--;
                 Debug.Log(CanCount);
-
+                if (obstacleSound != null)
+                {
+                    audioSource.PlayOneShot(obstacleSound);
+                }
             }
             else
             {

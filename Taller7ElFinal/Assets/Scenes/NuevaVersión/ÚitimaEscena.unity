@@ -1297,11 +1297,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bc0fb6519edae234ba6f7b6fa6cf0dbb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3563,22 +3563,22 @@ PrefabInstance:
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.3
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.37
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.1
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6316911
+      value: 0.934329
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
@@ -3588,7 +3588,7 @@ PrefabInstance:
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7752203
+      value: -0.35641184
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
@@ -3603,7 +3603,7 @@ PrefabInstance:
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -101.65
+      value: -41.76
       objectReference: {fileID: 0}
     - target: {fileID: 8959280753212880215, guid: e2c8693e7426d7d4d8e79e4a85bd549d,
         type: 3}
